@@ -10,3 +10,5 @@ After entering it, the solution for a board of that size will be displayed (wher
 ## Notes
 - For simplicity purposes, the inner mechanics of the code handle the queens positions as a numeric array of size N, where every item represents a row, and the number inside of it represents the column on which the queen sits. In other words, every row has one and only one queen on it, by design, which also simplifies the neighbor generation and collision count.
 - To count collisions on the diagonals, two small tricks are used. Adding the row and column number of a given cell helps identify the ascending (↗) diagonals, since two cells on the same diagonal will always have the same sum. For descending (↘) diagonals, subtracting the the column number from the row number achieves the same thing.
+
+This code is based on the [solution by prasantkpatel](https://www.geeksforgeeks.org/n-queen-problem-local-search-using-hill-climbing-with-random-neighbour/) posted on the Geeks for Geeks website.
